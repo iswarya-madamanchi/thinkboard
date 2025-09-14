@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+        "postinstall": "npm install --prefix frontend && npm install --prefix backend",
     "build": "npm install --prefix frontend && npm install --prefix backend && npm run build --prefix frontend",
-    "start":"npm run start --prefix backend"
+      "start": "cd backend && NODE_ENV=production node server.js"
   },
   "repository": {
     "type": "git",
