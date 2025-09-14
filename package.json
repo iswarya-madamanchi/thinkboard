@@ -6,7 +6,7 @@
   "scripts": {
         "postinstall": "npm install --prefix frontend && npm install --prefix backend",
     "build": "npm install --prefix frontend && npm install --prefix backend && npm run build --prefix frontend",
-      "start": "cd backend && NODE_ENV=production node server.js"
+      "start": "cd backend && NODE_ENV=production node src/server.js"
   },
   "repository": {
     "type": "git",
